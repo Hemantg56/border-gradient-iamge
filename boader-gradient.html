@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Border Gradient color </title>
+    <style>
+        /* border par .gradient color lavu hoyh to enu attribute */
+        /* border-image: linearGradient(red, blue), */
+        /* aama jyare sudhi border nahi aapiye to border iamge nahi api skay */
+        /* ama multi pal value hoy to coma (,) nahi use thay */
+        /* jyare aapde border image aapya pachi stretch value aapvani jaroori 6 but parsantage ma */
+        /* stretch value nahi aapavu to biju ek attribute 6 */
+        /* border-image-slayice use karo to perfect dekhade */
+        /* stretch and border-image-slice ek kaam kare */
+        /*  */
+        /* stretch value */
+        
+        .gradient {
+            border: 20px solid;
+            padding: 35px;
+            border-image: linear-gradient(red, blue) stretch 10%;
+            /* border-image: linear-gradient(green, yellow); */
+        }
+        /*  */
+        /* border-image-slice attribute */
+        
+        .gradient1 {
+            margin-top: 40px;
+            border: 20px solid;
+            padding: 35px;
+            /* border-image: linear-gradient(red, blue) stretch 10%; */
+            border-image: linear-gradient(green, yellow);
+            border-image-slice: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Border Gradient Color -->
+    <div class="gradient">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequuntur esse excepturi, explicabo iste voluptatem sit unde ut numquam accusamus fugiat et error magni nihil maiores est. Sequi, cum perspiciatis. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Voluptate consequuntur esse excepturi, explicabo iste voluptatem sit unde ut numquam accusamus fugiat et error magni nihil maiores est. Sequi, cum perspiciatis.
+    </div>
+
+    <div class="gradient1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequuntur esse excepturi, explicabo iste voluptatem sit unde ut numquam accusamus fugiat et error magni nihil maiores est. Sequi, cum perspiciatis. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Voluptate consequuntur esse excepturi, explicabo iste voluptatem sit unde ut numquam accusamus fugiat et error magni nihil maiores est. Sequi, cum perspiciatis.
+    </div>
+
+</html>

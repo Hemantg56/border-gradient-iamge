@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Border Image </title>
+    <style>
+        /* border par image lavu hoyh to enu attribute */
+        /* border-image: url(xyz.jpg), */
+        /* aama jyare sudhi border nahi aapiye to border iamge nahi api skay */
+        /* ama multi pal value hoy to coma (,) nahi use thay */
+        /* jyare aapde border image aapya pachi stretch value aapvani jaroori 6 but parsantage ma */
+        /* stretch value nahi aapavu to biju ek attribute 6 */
+        /* border-image-slayice use karo to perfect dekhade */
+        /* stretch and border-image-slice ek kaam kare         */
+        /*  */
+        /* stretch value */
+        
+        .image {
+            border: 50px solid;
+            padding: 35px;
+            border-image: url(images-removebg-preview.png) stretch 20%;
+        }
+        /*  */
+        /* border-image-slice attribute */
+        
+        .image1 {
+            margin-top: 50px;
+            border: 50px solid;
+            padding: 35px;
+            border-image: url(images-removebg-preview.png);
+            border-image-slice: 20%;
+        }
+        /*  */
+        /* round value */
+        
+        .image2 {
+            margin-top: 50px;
+            border: 60px solid;
+            padding: 35px;
+            border-image: url(123.jpg.png) round 20%;
+            border-image-slice: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequuntur esse excepturi, explicabo iste voluptatem sit unde ut numquam accusamus fugiat et error magni nihil maiores est. Sequi, cum perspiciatis. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Voluptate consequuntur esse excepturi, explicabo iste voluptatem sit unde ut numquam accusamus fugiat et error magni nihil maiores est. Sequi, cum perspiciatis.
+    </div>
+    <div class="image1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequuntur esse excepturi, explicabo iste voluptatem sit unde ut numquam accusamus fugiat et error magni nihil maiores est. Sequi, cum perspiciatis. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Voluptate consequuntur esse excepturi, explicabo iste voluptatem sit unde ut numquam accusamus fugiat et error magni nihil maiores est. Sequi, cum perspiciatis.
+    </div>
+    <div class="image2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequuntur esse excepturi, explicabo iste voluptatem sit unde ut numquam accusamus fugiat et error magni nihil maiores est. Sequi, cum perspiciatis. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Voluptate consequuntur esse excepturi, explicabo iste voluptatem sit unde ut numquam accusamus fugiat et error magni nihil maiores est. Sequi, cum perspiciatis.
+    </div>
+</body>
+
+</html>
